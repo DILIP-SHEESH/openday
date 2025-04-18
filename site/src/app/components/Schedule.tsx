@@ -2,8 +2,6 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import SurpriseGuest from './SurpriseGuest';
-
 export default function Schedule() {
   const scheduleBlocks = [
     {
@@ -65,7 +63,6 @@ export default function Schedule() {
       location: 'Main Stage',
       activities: [
         { name: 'AWARDS & RECOGNITION', description: 'Celebrating Excellence' },
-        { name: 'SURPRISE COMEDY ACT', description: 'Special Performance by Mystery Guest' },
         { name: 'CLOSING REMARKS', description: 'Vote of Thanks' }
       ],
       color: 'from-[#67B044] to-[#9EE666]',
@@ -151,9 +148,6 @@ export default function Schedule() {
             </motion.div>
           ))}
         </div>
-
-        {/* Surprise Guest Section */}
-        <SurpriseGuest />
       </div>
     </div>
   );
